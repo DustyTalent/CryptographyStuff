@@ -37,7 +37,7 @@ for symbol in message:
     if symbol in SYMBOLS:
         symbolIndex = SYMBOLS.find(symbol)
 
-        #I swapped 2 the encryption and decryption
+        #I swapped 2 the encryption and decryption symbols
         if mode == 'encrypt':
             translatedIndex = symbolIndex - key
         elif mode == 'decrypt':
@@ -53,5 +53,6 @@ for symbol in message:
     else:
         #append the symbol
         translated = translated + symbol
+
 
 print(translated)
